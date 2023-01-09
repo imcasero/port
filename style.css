@@ -16,6 +16,11 @@
   src: url(./public/fonts/MavenPro-VariableFont_wght.ttf);
 }
 .header-conteiner {
+  background-color: var(--blanco);
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  box-shadow: 0px 7px 5px -4px rgba(0, 0, 0, 0.75);
   justify-content: center;
   display: flex;
   height: 10vh;
@@ -45,11 +50,51 @@ section {
   height: 90vh;
 }
 #home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
+}
+#home img {
+  margin-top: 30vh;
 }
 .img-home {
+  margin-bottom: 0;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+#home h2,
+#home h3,
+#home p {
+  margin: 0;
+}
+#home p {
+  font-weight: bold;
+}
+.titulo {
+  text-align: center;
+  font-size: xx-large;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap; /* los espacios en blanco no rompen la línea */
+  width: 20ch; /* el ancho será el número de caracteres que tiene nuestra línea */
+  animation: escribiendo 2s steps(20);
+  overflow: hidden;
+}
+.cursor {
+  color: var(--pur);
+  animation: 0.6s parpadeo-cursor infinite;
+}
+
+@keyframes escribiendo {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes parpadeo-cursor {
+  50% {
+    opacity: 0;
+  }
 }
