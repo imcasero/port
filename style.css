@@ -47,7 +47,7 @@ header nav ul li a:hover {
   color: var(--pur);
 }
 section {
-  height: 90vh;
+  height: 100vh;
 }
 #home {
   align-items: center;
@@ -97,4 +97,62 @@ section {
   50% {
     opacity: 0;
   }
+}
+.cv-button {
+  background-color: var(--pur);
+  /* border: 2px solid var(--negro); */
+  border: 0px;
+  width: 5em;
+  height: 4vh;
+  font-weight: bold;
+  transition: 0.7s;
+}
+.cv-button:hover {
+  cursor: pointer;
+  transition: 0.7s;
+  background-color: var(--blanco);
+  border: 1px solid var(--pur);
+  color: var(--pur);
+  width: 5em;
+  height: 4vh;
+  font-weight: bold;
+  border-radius: 50%;
+}
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 200px;
+}
+#about p {
+  padding: 10px;
+  font-size: larger;
+}
+#about p b {
+  color: var(--pur);
+}
+#skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#skills .contenedor {
+  text-align: center;
+  background-color: #7d53de;
+  width: 20%;
+  height: 45vh;
+  margin-right: 5%;
+  margin-left: 5%;
+  border-radius: 10%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.87);
+}
+#skills div h3 {
+  padding: 10px;
+}
+#skills .contenedor img {
+  padding: 20px;
+  width: 20%;
+  padding-top: 40px;
 }
