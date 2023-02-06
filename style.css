@@ -72,6 +72,10 @@ section {
 #home p {
   font-weight: bold;
 }
+#home .frase {
+  font-weight: normal;
+  font-size: large;
+}
 .titulo {
   text-align: center;
   font-size: xx-large;
@@ -142,7 +146,8 @@ img {
   text-align: center;
   background-color: #7d53de;
   width: 20%;
-  height: 45vh;
+  height: fit-content;
+  min-height: 45vh;
   margin-right: 5%;
   margin-left: 5%;
   border-radius: 10%;
