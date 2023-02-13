@@ -131,6 +131,7 @@ img {
   width: 200px;
 }
 #about p {
+  width: 50%;
   padding: 10px;
   font-size: larger;
 }
