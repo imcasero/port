@@ -2,9 +2,11 @@
   --blanco: #fffffa;
   --negro: #000;
   --pur: #7d53de;
+  --pur-light: #a194e3;
 }
 * {
-  margin: auto 0;
+  cursor: url("./public/img/Iconos/programcion/icons8-blue-pointer-24.png"),
+    auto;
   font-family: secundaria;
 }
 @font-face {
@@ -24,8 +26,11 @@
   justify-content: center;
   display: flex;
   height: 10vh;
+  align-items: center;
 }
 .header-conteiner nav ul {
+  justify-content: center;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -112,7 +117,7 @@ section {
   transition: 0.7s;
 }
 .cv-button:hover {
-  cursor: pointer;
+  cursor: url(./public/img/Iconos/programcion/icons8-hand-drag-24.png), auto;
   transition: 0.7s;
   background-color: var(--blanco);
   border: 1px solid var(--pur);
@@ -140,25 +145,31 @@ img {
 }
 #skills {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #skills .contenedor {
   text-align: center;
-  background-color: #7d53de;
-  width: 20%;
-  height: fit-content;
-  min-height: 45vh;
-  margin-right: 5%;
-  margin-left: 5%;
-  border-radius: 10%;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.87);
+  max-width: 80%;
 }
-#skills div h3 {
-  padding: 10px;
+#skills div h2 {
+  font-weight: bolder;
+  font-size: xx-large;
+  background: radial-gradient(var(--pur-light), var(--pur));
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -0.1em;
+  font-weight: bolder;
 }
-#skills .contenedor img {
-  padding: 20px;
-  width: 20%;
-  padding-top: 40px;
+.img-skills {
+  max-width: 90px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  margin: 0 10px;
+  box-shadow: 0px 0px 5px 0px rgba(161, 148, 227, 0.75);
+}
+.img-skills:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 0px 0px rgba(161, 148, 227, 0.75);
 }
