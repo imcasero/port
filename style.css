@@ -2,10 +2,11 @@
   --blanco: #fffffa;
   --negro: #000;
   --pur: #7d53de;
-  --pur-light: #bf8ed3;
+  --pur-light: #a194e3;
 }
 * {
-  margin: auto 0;
+  cursor: url("./public/img/Iconos/programcion/icons8-blue-pointer-24.png"),
+    auto;
   font-family: secundaria;
 }
 @font-face {
@@ -25,8 +26,11 @@
   justify-content: center;
   display: flex;
   height: 10vh;
+  align-items: center;
 }
 .header-conteiner nav ul {
+  justify-content: center;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -113,7 +117,7 @@ section {
   transition: 0.7s;
 }
 .cv-button:hover {
-  cursor: pointer;
+  cursor: url(./public/img/Iconos/programcion/icons8-hand-drag-24.png), auto;
   transition: 0.7s;
   background-color: var(--blanco);
   border: 1px solid var(--pur);
@@ -146,31 +150,26 @@ img {
   align-items: center;
 }
 #skills .contenedor {
-  text-align: left;
+  text-align: center;
   max-width: 80%;
 }
 #skills div h2 {
+  font-weight: bolder;
   font-size: xx-large;
-  background: linear-gradient(var(--pur), var(--pur-light));
+  background: radial-gradient(var(--pur-light), var(--pur));
   background-clip: text;
   color: transparent;
   letter-spacing: -0.1em;
   font-weight: bolder;
 }
-.contenedor .img-contenedor {
-  display: flex;
-  flex: row;
-  justify-content: center;
-  align-items: center;
-  -webkit-box-shadow: 0px 0px 63px 10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 63px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 63px 10px rgba(0, 0, 0, 0.2);
-  min-height: 15vh;
-  border-radius: 20px;
-  width: 100%;
-  flex-wrap: wrap;
-  gap: 20px;
+.img-skills {
+  max-width: 90px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  margin: 0 10px;
+  box-shadow: 0px 0px 5px 0px rgba(161, 148, 227, 0.75);
 }
-.contenedor .img-contenedor img {
-  width: 10%;
+.img-skills:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 0px 0px rgba(161, 148, 227, 0.75);
 }
