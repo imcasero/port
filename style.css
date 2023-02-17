@@ -9,6 +9,10 @@
     auto;
   font-family: secundaria;
 }
+body {
+  padding: 0;
+  body: 0;
+}
 @font-face {
   font-family: principal;
   src: url(./public/fonts/BebasNeue-Regular.ttf);
@@ -158,6 +162,8 @@ img {
   font-size: xx-large;
   background: radial-gradient(var(--pur-light), var(--pur));
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   color: transparent;
   letter-spacing: -0.1em;
   font-weight: bolder;
